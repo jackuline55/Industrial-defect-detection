@@ -32,8 +32,8 @@ Real-time video capture via webcam (for live monitoring)
 This system performs a series of image processing tasks that simulate an industrial defect detection workflow. It includes image pre-processing, defect highlighting through edge and contour detection, color analysis, and real-time monitoring. The approach provides foundational capabilities that can be scaled for automated quality control in manufacturing environments.
 
 **Benefits of Industrial Defect Detection Systems:**
-**Increased Product Quality**: Early detection of visual defects ensures that only high-quality products reach customers, enhancing brand reputation.
 
+**Increased Product Quality**: Early detection of visual defects ensures that only high-quality products reach customers, enhancing brand reputation.
 **Reduced Human Error**: Automating inspection reduces reliance on manual checks, which can be inconsistent and prone to oversight.
 **Improved Production Speed**: Real-time monitoring and automated inspections streamline the quality control process without slowing down production.
 **Worker Safety**: Minimizes the need for workers to manually inspect potentially hazardous machinery or environments.
