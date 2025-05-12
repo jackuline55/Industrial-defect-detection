@@ -1,1 +1,1 @@
-# Industrial-defect-detection
+# **Industrial-defect-detection**
