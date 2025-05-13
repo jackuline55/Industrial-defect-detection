@@ -14,16 +14,6 @@ contours, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPRO
 image_with_contours = image.copy()
 cv2.drawContours(image_with_contours, contours, -1, (0, 255, 0), 2)  # Green color contours
 cv2_imshow(image_with_contours)
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5)
-image_with_faces = image.copy()
-
-for (x, y, w, h) in faces:
-    cv2.rectangle(image_with_faces, (x, y), (x + w, y + h), (255, 0, 0), 2)  # Blue rectangle
-
-cv2_imshow(image_with_faces)
-blurred_image = cv2.GaussianBlur(image, (15, 15), 0)
-cv2_imshow(blurred_image)
 
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 # Define range of blue color in HSV
@@ -56,12 +46,4 @@ while True:
 # Release resources
 cap.release()
 cv2.destroyAllWindows()
-# Simple average blur
-average_blur = cv2.blur(image, (15, 15))  # (kernel size)
-cv2_imshow(average_blur)
-# Gaussian blur
-gaussian_blur = cv2.GaussianBlur(image, (15, 15), 0)
-cv2_imshow(gaussian_blur)
-# Median blur
-median_blur = cv2.medianBlur(image, 15)
-cv2_imshow(median_blur)
+
